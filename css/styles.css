@@ -154,7 +154,7 @@ body {
 	max-width: 1200px;
 	height: 3px;
 	background: linear-gradient(to right, #343434, #555555, #343434);
-	margin: 40px auto;
+	margin: 30px auto;
 	border-radius: 5px;
 	opacity: 0.8;
 }
@@ -290,6 +290,11 @@ body {
 	font-size: 2em;
 	color: #fff;
 	margin-bottom: 20px;
+}
+
+.toolbelt p {
+	color: #fff;
+	margin: 40px;
 }
 
 .carousel-wrapper {
