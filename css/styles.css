@@ -19,6 +19,11 @@ body {
 }
 
 /* Navbar styling */
+#logo {
+	width: 60px;
+	height: 60px;
+}
+
 .navbar {
 	background-color: #343434;
 	color: #fff;
@@ -307,9 +312,9 @@ body {
     content: '';
     position: absolute;
     top: 0;
-    width: 20%; /* Adjust width for fading effect */
+    width: 10%;
     height: 100%;
-    z-index: 1; /* Position above the carousel */
+    z-index: 1;
 }
 
 .carousel::before {
@@ -324,8 +329,8 @@ body {
 
 .carousel-container {
 	display: flex;
-	width: calc(100% * 0.7);
-	animation: scroll 25s linear infinite; /* Adjust the time for speed */
+	width: calc(100% * 1.8);
+	animation: scroll 24s linear infinite; /* Adjust the time for speed */
 	transform: translateX(-20%);
 }
 
