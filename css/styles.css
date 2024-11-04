@@ -132,6 +132,7 @@ body {
 }
 
 #projects-button {
+	text-decoration: none;
 	background-color: #9c9bd4;
 	color: #333;
 	padding: 12px 40px;
@@ -174,7 +175,7 @@ body {
 }
 
 .about p {
-	font-size: 1.1em;
+	font-size: 1em;
 	margin-bottom: 25px;
 	color: #fff;
 	line-height: 1.6;
@@ -194,14 +195,15 @@ body {
 
 .content-one img {
 	order: 1;
+	border:#114146 1px solid 
 }
 
 .content-one img,
 .content-two img {
-    width: 200px;
+    width: 40%;
     height: 300px;
     object-fit: cover;
-    border-radius: 8px;
+    border-radius: 20px;
 }
 
 .content {
@@ -213,6 +215,7 @@ body {
 
 #cv-button {
 	background-color: #9c9bd4;
+	text-decoration: none;
 	color: #333;
 	padding: 12px 40px;
 	border-radius: 20px;
