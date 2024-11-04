@@ -258,8 +258,8 @@ body {
 	border-radius: 20px;
 	width: 100%;
 	max-width: 400px;
-	box-shadow: 10px 10px 20px #7371d8,
-							-10px -10px 20px #6d548d;
+	box-shadow: 7px 7px 12px #7371d8,
+							-5px -5px 12px #6d548d;
 }
 
 .skills-list h3 {
@@ -362,5 +362,117 @@ body {
 	100% { transform: translateX(-100%); }
 }
 
+/* Projects Section Styling */
+.projects {
+	text-align: center;
+	padding: 50px 20px;
+	background-color: #343434;
+}
+
+.projects h2 {
+	font-size: 2em;
+	color: #fff;
+	margin-bottom: 40px;
+}
+
+.projects-grid {
+	display: grid;
+	gap: 30px;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.project-card {
+	background: #343434;
+	border: 2px solid #3e3e3e;
+	border-radius: 20px;
+	overflow: hidden;
+	transition: transform 0.3s ease, box-shadow 0.2s ease;
+}
+
+.project-card:hover {
+	transform: translateY(-4px);
+	box-shadow: 5px 5px 7px #7371d8,
+							-1px -1px 3px #6d548d;
+}
+
+.project-card img {
+	width: 100%;
+	height: auto;
+}
+
+.project-card h3 {
+	font-size: 1.2em;
+	color: #fff;
+	margin: 15px 20px 10px;
+}
+
+.project-card p {
+	font-size: 0.8em;
+	color: #fff;
+	margin: 0 20px 20px;
+}
+
+.card-buttons {
+	margin: 10px;
+}
+
+.btn {
+	display: inline-block;
+	margin: 8px;
+	padding: 10px 20px;
+	font-size: 14px;
+	color: #000;
+	background-color: #9c9bd4;
+	border-radius: 20px;
+	border: none;
+	text-decoration: none;
+	transition: background-color 0.3s ease
+}
+
+.btn:hover {
+	background-color: #b7b6ef;
+}
+
+/* Contacts Section Styling */
+.contact {
+	text-align: center;
+	padding: 20px;
+}
+
+.contact p {
+	font-size: 16px;
+	margin-bottom: 20px;
+	color: #fff;
+}
+
+.contact h2 {
+	font-size: 28px;
+	color: #fff;
+	margin-bottom: 15px;
+}
+
+.contact-icons {
+	display: flex;
+	justify-content: center;
+	gap: 25px;
+}
+
+.contact-icon img {
+	width: 40px;
+	height: 40px;
+	transition: transform 0.3s;
+}
+
+.contact-icon img:hover {
+	transform: scale(1.2);
+}
+
+#impressum {
+	margin: 10px;
+	font-size: 16px;
+	color: #fff;
+}
 
 
