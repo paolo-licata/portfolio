@@ -402,7 +402,21 @@ body {
 
 .project-card img {
 	width: 100%;
-	height: auto;
+	height: 40%;
+}
+
+.multi-image-container {
+	display: flex;
+  gap: 5px;
+  justify-content: center;
+  padding: 10px;
+}
+
+.multi-image-container img {
+  flex: 1;
+  max-width: 110px;
+  height: auto;
+  border-radius: 8px;
 }
 
 .project-card h3 {
