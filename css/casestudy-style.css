@@ -1,0 +1,175 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	background-color: #333;
+}
+
+/* Smooth scrolling */
+html {
+	scroll-behavior: smooth;
+}
+
+/* Basic page styling */
+body {
+	font-family: Arial, sans-serif;
+	color: #333;
+	line-height: 1.6;
+}
+
+/* Navbar styling */
+#logo {
+	width: 60px;
+	height: 60px;
+}
+
+.navbar {
+	background-color: #333;
+	color: #fff;
+	padding: 15px 0;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	z-index: 1000;
+}
+
+.nav-container {
+	width: 90%;
+	max-width: 1200px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.nav-logo {
+	font-size: 1.5em;
+	font-weight: bold;
+	color: #fff;
+	text-decoration: none;
+}
+
+.nav-links {
+	list-style: none;
+	display: flex;
+	gap: 15px;
+}
+
+.nav-links li {
+	display: inline;
+}
+
+.nav-links a {
+	position: relative;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  padding-bottom: 5px; 
+  transition: color 0.3s ease-in;
+}
+
+.nav-links a::after {
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 0;
+	height: 2px;
+	background-color: #acabf5;
+	transition: width 0.3s ease-in, background-color 0.3s ease-in;
+}
+
+.nav-links a:hover {
+	color: #acabf5;
+}
+
+.nav-links a:hover::after {
+	width: 100%;
+	background-color: #acabf5;
+}
+
+/* Intro section styling */
+.intro {
+  padding: 100px 20px 50px; /* add top padding to offset from the fixed navbar */
+  background-color: #333;
+  color: #ffffff;
+  text-align: center;
+}
+
+.intro h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  color: #fff; /* Matches the accent color of the navbar link hover */
+}
+
+.intro img {
+  max-width: 35%;
+  height: auto;
+  margin: 20px 0;
+  border-radius: 10px;
+  box-shadow: 7px 7px 12px #7371d8,
+							-5px -5px 12px #6d548d;
+}
+
+.intro h2 {
+  font-size: 1.8em;
+  margin: 20px 0 10px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.intro p {
+  font-size: 1.1em;
+  max-width: 800px;
+  margin: 0 auto 20px;
+  line-height: 1.8;
+  color: #dddddd;
+}
+
+/* Technology section styling */
+.technology-section {
+  padding: 50px 20px;
+  background-color: #333;
+  color: #ffffff;
+  text-align: center;
+}
+
+.technology-section h2 {
+  font-size: 2em;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.technology-section h3 {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  color: #dddddd;
+}
+
+/* Table styling */
+.tech-table {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  border-collapse: collapse;
+  background-color: #333;
+  color: #ffffff;
+}
+
+.tech-table th,
+.tech-table td {
+  padding: 20px;
+  border: 1px solid #444444;
+  text-align: center;
+  font-size: 0.9em;
+}
+
+.tech-table a {
+	color: #acabf5;
+	text-decoration: none;
+	transition: color 0.3s ease;
+}
+
+.tech-table a:hover {
+	color: #cac9fe;
+}
