@@ -107,5 +107,96 @@
         </tbody>
       </table>
     </div>
+
+    <!--Approach section-->
+    <div class="approach-section">
+      <h2>Approach</h2>
+      <h3>Back-end</h3>
+      <div class="backend">
+        <div class="backend-item">
+          <img
+            src="./projects-images/movieapi.png"
+            alt="Code snippet picture"
+          />
+          <p>
+            For the server side I created a RESTful API using
+            <b>Node.js and Express</b> as well as a non-relational database
+            using MongoDB. The API allows to retrieve data about movies and
+            users from the database through common HTTP requests and returns
+            JSON. <br />
+            API and database are connected by the business logic layer, using
+            Mongoose.
+          </p>
+        </div>
+
+        <div class="backend-item">
+          <img src="./projects-images/postman.png" alt="Postman screenshot" />
+          <p>
+            I also implemented a login endpoint with basic HTTP authentication
+            returning a authorization JWT (token) to the client. This is
+            necessary to ensure only logged in users can access the database.
+            <br />
+            The structure and test of the endpoint was the most challenging part
+            of the project for me, but at the end everything started to make
+            sense and became clear and functional. To test the endpoints I used
+            <b>Postman</b>.
+          </p>
+        </div>
+      </div>
+
+      <!-- Divider -->
+      <div class="section-divider"></div>
+
+      <div class="clients">
+        <h3>Front-end</h3>
+        <h4>React Client</h4>
+        <img
+          src="./projects-images/myflix_client.png"
+          alt="React client home"
+        />
+        <p>
+          Later on I created another client accessing the same API and database.
+          This time I used Angular framework. It is again a single-page,
+          responsive web application with mostly the same functionality as the
+          React client, just a very different technology and new layout. In this
+          version, after registration/login, there is just one main view with a
+          slider to display all moves. From there modals can be opened to
+          display details about a style or source, as well as to edit the user
+          profile. <br />
+          <br />
+          This was one of the most challenging, but at the same time very
+          rewarding part for me as there was a lot to learn starting off with
+          React. Compared to pure/classical HTML, CSS and JavaScript, it is a
+          very different approach to interface creation and design. There were
+          many topics I had to research, experiment with and figure out.
+        </p>
+
+        <!-- Divider -->
+        <div class="section-divider"></div>
+
+        <h4>Angular Client</h4>
+        <img
+          src="./projects-images/angular-myflix.png"
+          alt="Angular client home"
+        />
+        <p>
+          Later on I created another client accessing the same API and database.
+          This time I used Angular framework. It is again a single-page,
+          responsive web application with mostly the same functionality as the
+          React client, just a very different technology and new layout. In this
+          version, after registration/login, there is just one main view with a
+          slider to display all moves. From there modals can be opened to
+          display details about a genre or director, as well as a component
+          designed to edit the user personal information.
+          <br />
+          <br />
+          Developing with Angular was different. It is a big and vast framework,
+          which means it comes with a lot more pre-defined structure and
+          built-in functionality. But as soon as I started to understand the
+          basic structure it started to make a lot of sense and recreating the
+          client was actually quite fast.
+        </p>
+      </div>
+    </div>
   </body>
 </html>
