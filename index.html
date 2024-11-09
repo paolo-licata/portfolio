@@ -11,14 +11,25 @@
     <!-- Navbar -->
     <nav class="navbar">
       <div class="nav-container">
-        <img src="./images/my-logo.png" id="logo" />
-        <ul class="nav-links">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About Me</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#contacts">Contact</a></li>
-        </ul>
+        <img src="./images/my-logo.png" id="logo" alt="Logo" />
+
+        <!-- Burger Menu Button -->
+        <button id="menu-toggle" aria-label="Toggle navigation">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+
+        <!-- Navigation Links -->
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contacts">Contact</a></li>
+          </ul>
+        </div>
       </div>
     </nav>
 
@@ -27,7 +38,7 @@
       <div class="home-row">
         <div>
           <img
-            src="https://placehold.co/250x250"
+            src="./images/profile-bw.JPG"
             class="portrait"
             alt="photo of me"
           />
@@ -211,9 +222,8 @@
           <p>
             <b>Meet-app</b> displays events in different cities which are
             fetched from a Google Calendar. The goal was to learn about PWAs,
-            test-driven-development (TDD), serverless functions, OAuth (useful
-            to log into an app with your google account), performance monitoring
-            and how to implement charts.
+            test-driven-development (TDD), performance monitoring and how to
+            implement charts.
           </p>
           <div class="card-buttons">
             <a
@@ -232,7 +242,10 @@
         </div>
 
         <div class="project-card">
-          <img src="https://placehold.co/500x400" alt="Portfolio project" />
+          <img
+            src="./projects-images/portfolio-home.png"
+            alt="Portfolio project"
+          />
           <h3>Portfolio project</h3>
           <p>
             The website you are currently looking at. <br />
@@ -439,7 +452,18 @@
           />
         </a>
       </div>
-      <a id="impressum" href="#">Impressum - .pdf download</a>
+      <a id="impressum" href="./downloads/Impressum.pdf" download
+        >Impressum - .pdf download</a
+      >
     </div>
+    <script>
+      document
+        .getElementById("menu-toggle")
+        .addEventListener("click", function () {
+          document
+            .querySelector(".nav-links-container")
+            .classList.toggle("active");
+        });
+    </script>
   </body>
 </html>

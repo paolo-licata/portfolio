@@ -35,7 +35,7 @@ body {
 }
 
 .nav-container {
-	width: 90%;
+	width: 85%;
 	max-width: 1200px;
 	margin: 0 auto;
 	display: flex;
@@ -44,7 +44,7 @@ body {
 }
 
 .nav-logo {
-	font-size: 1.5em;
+	font-size: 1.3em;
 	font-weight: bold;
 	color: #fff;
 	text-decoration: none;
@@ -89,10 +89,58 @@ body {
 	background-color: #acabf5;
 }
 
+/* Burger Menu Button Styling */
+#menu-toggle {
+  display: none; /* Hidden by default */
+  flex-direction: column;
+  gap: 4px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+#menu-toggle .bar {
+  width: 25px;
+  height: 2px;
+  background-color: #fff;
+  transition: 0.3s;
+}
+
+/* Styles for screens smaller than 800px */
+@media (max-width: 805px) {
+  #menu-toggle {
+    display: flex; /* Show burger menu button on small screens */
+  }
+
+		.nav-links-container {
+			display: none;
+			padding: 20px;
+			flex-direction: column;
+			background-color: #343434;
+			box-shadow: 2px 2px 4px #7371d8,
+							-1px -1px 3px #6d548d;
+							border-radius: 20px;
+			position: absolute;
+			top: 70px;
+			right: 30px;
+			width: 30%;
+		}
+	
+		.nav-links-container.active {
+			display: flex;
+		}
+	
+		.nav-links {
+			flex-direction: column;
+			align-items: center;
+			gap: 10px;
+		}
+	}
+
 /* Home styling */
 .section {
 	padding: 100px 0 60px;
-	width: 100%;
+	width: 90%;
 	max-width: 1200px;
 	margin: 0 auto;
 	font-size: 20px;
@@ -122,8 +170,12 @@ body {
 }
 
 .portrait {
-	border-radius: 50%;
-	margin: 40px;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  border: 2px solid #acabf5;
+  box-shadow: 0 8px 16px #0000004d;
+  object-fit: cover;
 }
 
 .home h1 {
@@ -165,7 +217,7 @@ body {
 	font-size: 14px;
 	cursor: pointer;
 	border: none;
-	margin-top: 20px;
+	margin-top: 80px;
 	transition: background-color 0.3s ease;
 }
 
@@ -516,4 +568,218 @@ body {
 	color: #fff;
 }
 
+/* Responsive design for max 1300px */
+@media (max-width: 1300px) {
+
+	.about h2 {
+		font-size: 1.7em;
+	}
+
+	.skills h2 {
+		font-size: 1.7em;
+	}
+
+	.projects h2 {
+		font-size: 1.7em;
+	}
+
+	.toolbelt h2 {
+		font-size: 1.7em;
+	}
+
+	.contacts h2 {
+		font-size: 1.7em;
+	}
+
+	.content-one img,
+	.content-two img {
+			display: none;
+	}
+
+	.carousel {
+		position: relative;
+		overflow: hidden;
+		width: 100%;
+		height: 80px;
+	}
+
+	.carousel-item {
+		flex: 0 0 auto;
+		width: 120px;
+		height: 70%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.btn {
+		display: inline-block;
+		padding: 8px 12px;
+		font-size: 14px;
+	}
+}
+
+/* Responsive design for max 1200px */
+@media (max-width: 1200px) {
+	.projects-grid {
+		grid-template-columns: 1fr 1fr;
+	}
+}
+
+/* Responsive design for tablets */
+@media (max-width: 805px) {
+	.nav-links {
+		flex-direction: column;
+		align-items: center;
+		gap: 10px;
+		padding-top: 10px;
+	}
+
+	.home {
+		margin-top: 150px;
+		padding: 30px;
+	}
+
+	.home h1 {
+		font-size: 1.7em;
+	}
+
+	.home p {
+		font-size: 0.9em;
+	}
+
+	.portrait {
+		width: 200px;
+		height: 200px;
+	}
+
+	.about h2 {
+		font-size: 1.5em;
+	}
+
+	.skills h2 {
+		font-size: 1.5em;
+	}
+
+	.projects h2 {
+		font-size: 1.5em;
+	}
+
+	.toolbelt h2 {
+		font-size: 1.5em;
+	}
+
+	.contacts h2 {
+		font-size: 1.5em;
+	}
+
+	.content-one,
+	.content-two {
+		flex-direction: column;
+		gap: 15px;
+	}
+
+	.skills-container,
+	.projects-grid {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.projects-grid {
+		grid-template-columns: 1fr;
+	}
+}
+
+/* Responsive design for mobile devices */
+@media (max-width: 480px) {
+
+	.nav-container {
+    gap: 20px;
+    align-items: center;
+    padding: 5px 0;
+  }
+
+  .section {
+    padding: 50px 15px;
+    width: 90%;
+		height: 95%;
+    font-size: 15px;
+  }
+
+  .home {
+    display: flex;
+    margin-top: 130px;
+    padding: 30px;
+    height: auto; 
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+  }
+
+  .home-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .portrait {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  .home h1 {
+    font-size: 1.6em;
+    text-align: center;
+    line-height: 1.2em;
+  }
+
+  .typing-text {
+    font-size: 1.1em;
+    line-height: 1.2em;
+  }
+
+  #projects-button,
+  #cv-button {
+    padding: 10px 15px;
+    font-size: 12px;
+  }
+
+  .portrait {
+    width: 150px;
+    height: 150px;
+    margin-top: 10px;
+  }
+
+	.carousel-wrapper {
+		height: 70vh;
+	}
+
+	.carousel-container {
+		width: calc(100% * 2.5);
+	}
+
+	.carousel {
+		position: relative;
+		overflow: hidden;
+		width: 100%;
+		height: 60px;
+	}
+
+	.carousel-item {
+		flex: 0 0 auto;
+		width: 90px;
+		height: 70%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.skills-list,
+	.project-card {
+		max-width: 90%;
+	}
+}
 

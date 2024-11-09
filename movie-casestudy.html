@@ -5,20 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="./images/my-logo.ico" type="image/x-icon" />
     <link rel="stylesheet" href="./css/casestudy-style.css" />
-    <title>MovieFlix - Case Study</title>
+    <title>MovieFlicks - Case Study</title>
   </head>
   <body>
     <!-- Navbar -->
     <nav class="navbar">
       <div class="nav-container">
-        <img src="./images/my-logo.png" id="logo" />
-        <ul class="nav-links">
-          <li><a href="./index.html">Home</a></li>
-          <li><a href="#techstack">Technology Stack</a></li>
-          <li><a href="#approach">Approach</a></li>
-          <li><a href="#conclusion">Conclusion</a></li>
-          <li><a href="#contacts">Contacts</a></li>
-        </ul>
+        <img src="./images/my-logo.png" id="logo" alt="Logo" />
+
+        <!-- Burger Menu Button -->
+        <button id="menu-toggle" aria-label="Toggle navigation">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+
+        <!-- Navigation Links -->
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="#techstack">Tech Stack</a></li>
+            <li><a href="#approach">Approach</a></li>
+            <li><a href="#conclusion">Conclusion</a></li>
+            <li><a href="#contacts">Contact</a></li>
+          </ul>
+        </div>
       </div>
     </nav>
 
@@ -296,5 +307,15 @@
         </a>
       </div>
     </div>
+
+    <script>
+      document
+        .getElementById("menu-toggle")
+        .addEventListener("click", function () {
+          document
+            .querySelector(".nav-links-container")
+            .classList.toggle("active");
+        });
+    </script>
   </body>
 </html>

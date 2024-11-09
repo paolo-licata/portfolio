@@ -88,6 +88,54 @@ body {
 	background-color: #acabf5;
 }
 
+/* Burger Menu Button Styling */
+#menu-toggle {
+  display: none; /* Hidden by default */
+  flex-direction: column;
+  gap: 4px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+#menu-toggle .bar {
+  width: 25px;
+  height: 2px;
+  background-color: #fff;
+  transition: 0.3s;
+}
+
+/* Styles for screens smaller than 800px */
+@media (max-width: 805px) {
+  #menu-toggle {
+    display: flex; /* Show burger menu button on small screens */
+  }
+
+		.nav-links-container {
+			display: none;
+			padding: 20px;
+			flex-direction: column;
+			background-color: #343434;
+			box-shadow: 2px 2px 4px #7371d8,
+							-1px -1px 3px #6d548d;
+							border-radius: 20px;
+			position: absolute;
+			top: 70px;
+			right: 30px;
+			width: 30%;
+		}
+	
+		.nav-links-container.active {
+			display: flex;
+		}
+	
+		.nav-links {
+			flex-direction: column;
+			align-items: center;
+			gap: 10px;
+		}
+	}
+
 /* Intro section styling */
 .intro {
   padding: 100px 20px 50px; /* add top padding to offset from the fixed navbar */
@@ -103,7 +151,8 @@ body {
 }
 
 .intro img {
-  max-width: 35%;
+  width: 90%;
+  max-width: 900px;
   height: auto;
   margin: 20px 0;
   border-radius: 10px;
@@ -179,9 +228,11 @@ body {
   padding: 50px 20px;
   background-color: #333;
   color: #ffffff;
+  display: flex;
+  flex-direction: column;
   text-align: center;
-	justify-content: center;
-	align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .approach-section h2 {
@@ -197,10 +248,10 @@ body {
 }
 
 .backend {
-	width: 100%;
-	margin-bottom: 80px;
-	justify-content: center;
-	align-items: center;
+  width: 100%;
+  margin-bottom: 80px;
+  justify-content: center;
+  align-items: center;
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -217,8 +268,7 @@ body {
   width: 350px;
   height: auto;
   border-radius: 20px;
-  box-shadow: 3px 3px 5px #7371d8,
-							-1px -1px 3px #6d548d;
+  box-shadow: 3px 3px 5px #7371d8, -1px -1px 3px #6d548d;
 }
 
 .backend-item p {
@@ -227,12 +277,40 @@ body {
   color: #dddddd;
 }
 
+/* Alternate flex directions for larger screens */
 .backend-item:nth-child(odd) {
   flex-direction: row;
 }
 
 .backend-item:nth-child(even) {
   flex-direction: row-reverse;
+}
+
+/* Responsive styling for screens under 660px */
+@media (max-width: 660px) {
+  .backend-item {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+  }
+
+  .backend-item img {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .backend-item p {
+    max-width: 100%;
+  }
+
+  .approach-section h2 {
+    font-size: 1.8em;
+  }
+
+  .approach-section h3 {
+    font-size: 1.4em;
+  }
 }
 
 /* Front-end Section Styling */
