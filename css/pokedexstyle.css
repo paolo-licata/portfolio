@@ -90,7 +90,7 @@ body {
 
 /* Burger Menu Button Styling */
 #menu-toggle {
-  display: none; /* Hidden by default */
+  display: none;
   flex-direction: column;
   gap: 4px;
   background: none;
@@ -108,7 +108,7 @@ body {
 /* Styles for screens smaller than 800px */
 @media (max-width: 805px) {
   #menu-toggle {
-    display: flex; /* Show burger menu button on small screens */
+    display: flex;
   }
 
 		.nav-links-container {
@@ -138,7 +138,7 @@ body {
 
 /* Intro section styling */
 .intro {
-  padding: 100px 20px 50px; /* add top padding to offset from the fixed navbar */
+  padding: 100px 20px 50px;
   background-color: #333;
   color: #ffffff;
   text-align: center;
@@ -147,7 +147,7 @@ body {
 .intro h1 {
   font-size: 2.5em;
   margin-bottom: 10px;
-  color: #fff; /* Matches the accent color of the navbar link hover */
+  color: #fff;
 }
 
 .intro img {
